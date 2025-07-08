@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es" class="transition-colors duration-500">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio - Alexis Bernal</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Íconos de Heroicons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body
+    class="bg-gradient-to-tr from-blue-100 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-800 transition-colors duration-500 dark:text-white font-sans">
+    <!-- Fondo animado con partículas -->
+    <div id="tsparticles"></div>
+
+
+    <!-- Navbar fija -->
+    <nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full shadow z-50 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">Alexis Bernal</h1>
+            <ul class="flex space-x-6 text-gray-700 dark:text-gray-300 font-semibold">
+                <li><a href="#sobre-mi" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Sobre mí</a>
+                </li>
+                <li><a href="#recursos" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Recursos</a>
+                </li>
+                <li><a href="#mi-dia" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Mi día ideal</a>
+                </li>
+                <li><a href="#contacto" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contacto</a>
+                </li>
+            </ul>
+
+            <button id="modoOscuroBtn"
+                class="ml-4 text-gray-700 dark:text-gray-300 hover:text-yellow-500 transition text-2xl"
+                title="Cambiar modo oscuro/claro" aria-label="Cambiar modo oscuro/claro">🌙</button>
+        </div>
+    </nav>
+
+    <div class="h-20"></div>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="max-w-4xl mx-auto mt-12 p-6 bg-white dark:bg-gray-800 rounded shadow reveal">
+        <div class="flex flex-col items-center">
+            <img src="imagenes/foto-alexis.jpg" alt="Foto de Alexis"
+                class="w-40 h-40 rounded-full shadow-lg border-4 border-blue-500 hover:scale-110 transition duration-300 mb-6" />
+            <h2 class="text-2xl font-bold mb-4 text-center">Sobre mí</h2>
+            <p class="text-center text-gray-800 dark:text-gray-300 max-w-xl">
+                ¡Hola! Soy Alexis, estudiante de Analista programador en inacap con enfoque en desarrollo web.
+                Me apasiona crear interfaces atractivas y funcionales.
+                En este pagina web encontrarás algunos datos mios personales.
+            </p>
+        </div>
+    </section>
+
+    <!-- Metas, Intereses y Curiosidades -->
+    <section id="sobre-mi-extra" class="max-w-6xl mx-auto mt-12 p-6 transition-colors duration-500">
+        <h2 class="text-2xl font-bold mb-6 text-center reveal">Un poco más sobre mí</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Metas profesionales -->
+            <div
+                class="reveal bg-white dark:bg-gray-800 rounded shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3 flex items-center gap-2">
+                    🎯 Metas profesionales
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>Convertirme en desarrollador full-stack.</li>
+                    <li>Aprender un nuevo idioma relevante para el trabajo. </li>
+                    <li>Colaborar en proyectos reales y de impacto social.</li>
+                    <li>Ayudar en lo que se me necesite.</li>
+                    <li>Dominar nuevas tecnologías o software. </li>
+                </ul>
+            </div>
+
+            <!-- Intereses -->
+            <div
+                class="reveal bg-white dark:bg-gray-800 rounded shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <h3 class="text-xl font-bold text-purple-600 dark:text-purple-400 mb-3 flex items-center gap-2">
+                    💡 Intereses
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>Desarrollo web creativo.</li>
+                    <li>Inteligencia artificial.</li>
+                    <li>Videojuegos 🎮.</li>
+                    <li>Explorar herramientas de productividad (uso Excel, Lucidchart y atajos de teclado para optimizar
+                        tareas)</li>
+                    <li>Desarrollo de aplicaciones móviles</li>
+                </ul>
+            </div>
+
+            <!-- Curiosidades -->
+            <div
+                class="reveal bg-white dark:bg-gray-800 rounded shadow-lg p-6 hover:shadow-2xl transition-all duration-300">
+                <h3 class="text-xl font-bold text-pink-600 dark:text-pink-400 mb-3 flex items-center gap-2">
+                    🧩 Curiosidades sobre mí
+                </h3>
+                <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>Soy muy autodidacta, me encanta aprender a traves de internet. </li>
+                    <li>Me gusta trabajar con música de fondo.</li>
+                    <li>Me apasiona aprender; comprender a fondo lo que estudio me resulta profundamente gratificante
+                        🎨.</li>
+                    <li>Los errores me hacen aprender y ser mas fuerte. 😄.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos útiles -->
+    <section id="recursos" class="max-w-4xl mx-auto mt-12 p-6 bg-white dark:bg-gray-800 rounded shadow reveal">
+        <h2 class="text-2xl font-bold mb-6 text-center">📚 Recursos que recomiendo</h2>
+        <ul class="list-disc list-inside text-gray-800 dark:text-gray-300 space-y-2">
+            <li>
+                <a href="https://developer.mozilla.org/" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    MDN Web Docs
+                </a> – Referencia oficial y completa sobre HTML, CSS y JS.
+            </li>
+            <li>
+                <a href="https://www.youtube.com/c/holamundo" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    HolaMundo
+                </a> – Canal con cursos estructurados sobre desarrollo y tecnologías.
+            </li>
+            <li>
+                <a href="https://www.youtube.com/c/soydalto" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    Soy Dalto
+                </a> – Explicaciones simples y entretenidas sobre programación y buenas prácticas.
+            </li>
+            <li>
+                <a href="https://www.youtube.com/c/midudev" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    Midudev
+                </a> – Canal en español con proyectos reales y tips de desarrollo web.
+            </li>
+            <li>
+                <a href="https://www.tailwindcss.com/" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    Tailwind CSS
+                </a> – Herramienta para diseñar interfaces rápidamente.
+            </li>
+            <li>
+                <a href="https://chat.openai.com" class="text-blue-600 dark:text-blue-400 hover:underline"
+                    target="_blank">
+                    ChatGPT
+                </a> – Ideal para resolver dudas, generar ideas y practicar código.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Mi día ideal -->
+    <section id="mi-dia" class="max-w-4xl mx-auto mt-12 p-6 bg-white dark:bg-gray-800 rounded shadow reveal">
+        <h2 class="text-2xl font-bold mb-6 text-center">🕓 Mi día ideal como programador</h2>
+        <p class="text-gray-800 dark:text-gray-300 text-center leading-relaxed">
+            Comienzo con un tesito caliente (preferible de que sea de algun sabor) ☕ y mi playlist favorita para
+            enfocarme(algun reggueton,bachata o pop).
+            Abro Visual Studio Code, organizo mi día y empiezo a programar.
+            Me encanta enfrentar retos y buscar soluciones investigando o preguntando.
+            A media tarde, hago pausas mentales utilizando el celular para despejar la mente y luego sigo construyendo
+            cosas geniales en la web.
+            Termino el día contento si logré aprender algo nuevo o mejorar mi código. 🚀
+        </p>
+    </section>
+
+
+
+
+    <!-- Contacto -->
+    <section id="contacto"
+        class="max-w-4xl mx-auto mt-12 p-6 bg-white dark:bg-gray-800 rounded shadow animacion-aparecer transition-colors duration-500 reveal">
+        <h2 class="text-2xl font-bold mb-4 text-center">📬 Contacto</h2>
+
+        <div class="text-center text-gray-800 dark:text-gray-300 space-y-2 mb-6">
+            <p>📧 <strong>Correo:</strong> alexis.bernal@inacapmail.cl</p>
+            <p>📱 <strong>Teléfono:</strong> +56954571594</p>
+            <p>📍 <strong>Ubicación:</strong> Valparaíso, Chile</p>
+        </div>
+
+        <form id="formularioContacto" class="space-y-4 max-w-md mx-auto">
+            <div>
+                <label class="block font-semibold text-gray-800 dark:text-gray-300">Nombre</label>
+                <input type="text"
+                    class="w-full p-2 border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-300"
+                    required placeholder="Tu nombre" />
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-800 dark:text-gray-300">Correo</label>
+                <input type="email"
+                    class="w-full p-2 border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-300"
+                    required placeholder="tuemail@ejemplo.com" />
+            </div>
+            <div>
+                <label class="block font-semibold text-gray-800 dark:text-gray-300">Mensaje</label>
+                <textarea
+                    class="w-full p-2 border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-300"
+                    rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full transition-colors duration-300">
+                Enviar mensaje
+            </button>
+        </form>
+
+        <!-- Botón de WhatsApp -->
+        <div class="text-center mt-6">
+            <a href="https://wa.me/56954571594" target="_blank"
+                class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition">
+                💬 Enviar mensaje por WhatsApp
+            </a>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="mt-12 py-6 text-center text-sm text-gray-600 dark:text-gray-400 transition-colors duration-500">
+            © 2025 Alexis Bernal. Todos los derechos reservados.
+        </footer>
+
+        <!-- Script JS -->
+        <script src="index.js"></script>
+        <script>feather.replace()</script>
+</body>
+
+</html>
