@@ -23,25 +23,39 @@
 
 
     <!-- Navbar fija -->
+    <!-- Navbar fija y responsiva -->
     <nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full shadow z-50 transition-colors duration-500">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">Alexis Bernal</h1>
-            <ul class="flex space-x-6 text-gray-700 dark:text-gray-300 font-semibold">
-                <li><a href="#sobre-mi" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Sobre mí</a>
+
+            <!-- Botón hamburguesa para móviles -->
+            <button id="menuBtn" class="md:hidden text-gray-700 dark:text-gray-300 text-2xl focus:outline-none">
+                ☰
+            </button>
+
+            <!-- Lista de navegación -->
+            <ul id="menuNav"
+                class="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300 font-semibold md:items-center md:space-y-0 md:space-x-6 flex-col md:flex-row absolute md:static top-20 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent dark:md:bg-transparent shadow-md md:shadow-none z-40">
+                <li><a href="#sobre-mi"
+                        class="block px-4 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">Sobre mí</a>
                 </li>
-                <li><a href="#recursos" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Recursos</a>
+                <li><a href="#recursos"
+                        class="block px-4 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">Recursos</a>
                 </li>
-                <li><a href="#mi-dia" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Mi día ideal</a>
-                </li>
-                <li><a href="#contacto" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contacto</a>
+                <li><a href="#mi-dia" class="block px-4 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">Mi
+                        día ideal</a></li>
+                <li><a href="#contacto"
+                        class="block px-4 py-2 hover:text-blue-600 dark:hover:text-blue-400 transition">Contacto</a>
                 </li>
             </ul>
 
+            <!-- Botón modo oscuro -->
             <button id="modoOscuroBtn"
-                class="ml-4 text-gray-700 dark:text-gray-300 hover:text-yellow-500 transition text-2xl"
+                class="ml-4 text-gray-700 dark:text-gray-300 hover:text-yellow-500 transition text-2xl hidden md:block"
                 title="Cambiar modo oscuro/claro" aria-label="Cambiar modo oscuro/claro">🌙</button>
         </div>
     </nav>
+
 
     <div class="h-20"></div>
 

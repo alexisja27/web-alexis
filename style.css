@@ -1,8 +1,11 @@
 .miclase {
     color: rgb(255, 0, 21);
     text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
+/* Animación de aparición */
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -19,11 +22,14 @@
     animation: aparecer 0.6s ease-out;
 }
 
+/* Tarjeta con animación y responsividad */
 .tarjeta {
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    color: #333;
 }
 
 .tarjeta:hover {
@@ -31,19 +37,19 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Reveal animation: start hidden */
+/* Reveal animation */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Reveal active */
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
 
+/* Fondo de partículas */
 #tsparticles {
     position: fixed;
     width: 100%;
@@ -51,4 +57,41 @@
     z-index: -1;
     top: 0;
     left: 0;
+}
+
+/* RESPONSIVE EXTRAS */
+
+/* Móviles pequeños (menos de 640px) */
+@media (max-width: 639px) {
+    .miclase {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .tarjeta {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Tablets y pantallas medianas (640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .tarjeta {
+        padding: 1.25rem;
+    }
+
+    .miclase {
+        font-size: 1.1rem;
+    }
+}
+
+/* Escritorios grandes (1024px en adelante) */
+@media (min-width: 1024px) {
+    .tarjeta {
+        padding: 2rem;
+    }
+
+    .miclase {
+        font-size: 1.3rem;
+    }
 }

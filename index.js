@@ -1,5 +1,3 @@
-console.log("hola mundo");
-
 // Modo oscuro
 const modoBtn = document.getElementById("modoOscuroBtn");
 modoBtn.addEventListener("click", () => {
@@ -66,5 +64,18 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+// ------------------------------
+// Menú hamburguesa (responsive)
+// ------------------------------
+const menuBtn = document.getElementById("menuBtn");
+const menuNav = document.getElementById("menuNav");
+
+menuBtn.addEventListener("click", () => {
+    menuNav.classList.toggle("hidden");
+});
+
+
+
 
 
